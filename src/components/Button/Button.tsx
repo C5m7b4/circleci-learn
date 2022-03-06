@@ -10,7 +10,7 @@ export interface ButtonProps {
 const Button = (props: ButtonProps) => {
   const { label, style, onClick } = props;
   return (
-    <button onClick={onClick} style={style}>
+    <button data-testid="btn" onClick={onClick} style={style}>
       {label}
     </button>
   );

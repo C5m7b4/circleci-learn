@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
 import Button from './Button';
 
@@ -10,5 +10,6 @@ describe('Button', () => {
       <Button onClick={testFn} label={'Click Me'} />
     );
     expect(container).toMatchSnapshot();
+    const btn = fireEvent.click(container);
   });
 });
