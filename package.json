@@ -15,13 +15,14 @@
     "test:coverage": "jest --coverage",
     "test:coverage:watch": "jest --coverage --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "codecov": "npm test && codecov"
   },
   "author": "C5m7b4",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/C5m7b4/circleci-learn.git"
+    "url": "https://github.com/C5m7b4/circleci-learn"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
@@ -57,9 +58,5 @@
     "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.3.1",
     "typescript": "^4.6.2"
-  },
-  "jest":{
-    "coverageDirectory": "./coverage",
-    "collectCoverage": true
   }
 }

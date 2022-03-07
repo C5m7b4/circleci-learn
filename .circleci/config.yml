@@ -4,7 +4,7 @@ orbs:
 jobs:
   I-Have-Code:
     docker:
-      - image: alpine3.7
+      - image: cimg/base:2021.04
     steps:
       - checkout
       - run:
